@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>Bienvenid@ a nuestra tienda de peluches caseros</h1>
+<div class="productos">
+    {% for peluche in peluches %}
+    <div class="producto">
+        <img src="{{ url_for('static', filename='images/' + peluche['imagen']) }}" alt="{{ peluche['nombre'] }}">
+        <h2>{{ peluche['nombre'] }}</h2>
+        <p>Precio: ${{ peluche['precio'] }}</p>
+        <a href="{{ url_for('agregar_al_carrito', peluche_id=peluche['id']) }}"
+        onclick="mostrarNotificacion(event, '{{ peluche['nombre'] }}');">Añadir al carrito</a>
+    </div>
+    {% endfor %}
+</div>
+
+<!-- Contenedor del mensaje flotante -->
+<div id="notificacion-flotante" class="notificacion-oculta">
+    <p id="mensaje-notificacion"></p>
+    <button onclick="ocultarNotificacion()">Aceptar</button>
+</div>
+
+<script>
+    function mostrarNotificacion(event, nombreProducto) {
+        event.preventDefault(); // Evita que el enlace recargue la página
+        const notificacion = document.getElementById('notificacion-flotante');
+        const mensaje = document.getElementById('mensaje-notificacion');
+
+        // Establece el mensaje dinámicamente
+        mensaje.textContent = `¡${nombreProducto} agregado al carrito satisfactoriamente!`;
+
+        // Muestra la notificación
+        notificacion.classList.remove('notificacion-oculta');
+        notificacion.classList.add('notificacion-visible');
+        
+        // Redirige al servidor SOLAMENTE si decides mantener el temporizador
+        // setTimeout(() => {
+        //     window.location.href = event.target.href;
+        // }, 1500); // Descomenta si quieres redirección automática
+    }
+
+    function ocultarNotificacion() {
+        const notificacion = document.getElementById('notificacion-flotante');
+        notificacion.classList.add('notificacion-oculta');
+        notificacion.classList.remove('notificacion-visible');
+    }
+</script>
+{% endblock %}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Usuario</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+    <form method="post" action="/edit/">
+        <h1>Editar Usuario</h1>
+        <label>Username actual</label>
+        <select name="old_username" required>
+            {% for usuario in lista_usuarios %}
+            <option value="{{ usuario[0] }}">{{ usuario[0] }}</option>
+            {% endfor %}
+        </select>
+        <label>Nuevo Username</label>
+        <input type="text" name="new_username" required>
+        <label>Nueva Password</label>
+        <input type="password" name="new_password" required>
+        <button type="submit">Guardar Cambios</button>
+        <a href="/index_admin/">Volver</a>
+    </form>
+</body>
+</html>

@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>Chatbot de Asistencia</h1>
+<div id="chat-container">
+    <div id="chat-window">
+        <div id="messages"></div>
+    </div>
+    <input type="text" id="user-input" placeholder="Escribe tu mensaje aquí...">
+    <button id="send-btn">Enviar</button>
+</div>
+
+<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+{% endblock %}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eliminar Usuario</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+    <form method="post" action="/delete/">
+        <h1>Eliminar Usuario</h1>
+        <label>Username</label>
+        <select name="username" required>
+            {% for usuario in lista_usuarios %}
+            <option value="{{ usuario[0] }}">{{ usuario[0] }}</option>
+            {% endfor %}
+        </select>
+        <br><br>
+        <button type="submit">Eliminar</button>
+        <br>
+        <a href="/index_admin/">Volver</a>
+    </form>
+</body>
+</html>

@@ -1,0 +1,64 @@
+{% extends 'base.html' %}
+{% block content %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            min-height: 100vh;
+        }
+        .container, .container2 {
+            width: 100%;
+            max-width: 800px;
+            text-align: center;
+            background-color: #c2c2c2;
+            padding: 20px;
+            margin: 10px 0;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .container2 {
+            background-color: #ff4c4c;
+        }
+        h1 {
+            font-size: 2em;
+            color: #333;
+        }
+        h2 {
+            font-size: 1.5em;
+            color: #666;
+        }
+        p {
+            font-size: 1em;
+            color: #444;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sobre Nosotros</h1>
+    <div class="container">
+        <h1>DEO'S PLUSH STORE</h1>
+        <h2>"Peluches hechos a mano, amor en cada relleno y gramo"</h2>
+        <p>"Deo's Plush Store" es una encantadora tienda ubicada en Los Dos Caminos, Caracas, especializada en la creación de peluches caseros únicos y personalizados. Cada peluche es confeccionado a mano con amor y dedicación, utilizando materiales de alta calidad para asegurar que cada pieza sea especial y duradera. Nuestro objetivo es ofrecer productos que no solo brinden alegría y compañía, sino que también reflejen el cariño y la atención al detalle que ponemos en cada creación.</p>
+    </div>
+    <div class="container2">
+        <iframe src="https://www.youtube.com/embed/rd5qn-7928E" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+    <div class="container">
+        <a href="{{ url_for('logout') }}"><img src="{{ url_for('static', filename='images/logo.png') }}" width="200" height="200" class="left" title="Canal de Youtube"></a>
+        <h1>CANAL DE YOUTUBE</h1>
+        <h2>¡Siguenos en nuestra red más importante!
+        </h2>
+        <p>(No hay ninguna más)</p>
+    </div>
+</body>
+
+{% endblock %}

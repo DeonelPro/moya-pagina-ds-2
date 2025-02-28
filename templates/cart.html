@@ -1,1 +1,26 @@
-
+{% extends 'base.html' %}
+{% block content %}
+<h1>Tu Carrito de Compras</h1>
+{% if items %}
+<table>
+    <tr>
+        <th>Producto</th>
+        <th>Precio Unitario</th>
+        <th>Cantidad</th>
+        <th>Subtotal</th>
+    </tr>
+    {% for item in items %}
+    <tr>
+        <td>{{ item['nombre'] }}</td>
+        <td>${{ item['precio'] }}</td>
+        <td>{{ item['cantidad'] }}</td>
+        <td>${{ item['subtotal'] }}</td>
+    </tr>
+    {% endfor %}
+</table>
+<p><strong>Total: ${{ total }}</strong></p>
+<button>Proceder al Pago</button>
+{% else %}
+<p>Tu carrito está vacío.</p>
+{% endif %}
+{% endblock %}

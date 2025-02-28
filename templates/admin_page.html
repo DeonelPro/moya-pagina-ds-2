@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Among Us Wiki by Aguilera D.</title>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='images/icon.png') }}">
+
+    <style>
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+    <body>
+        <footer>
+            <nav>
+                <a href="{{ url_for('logout') }}" class="logout-btn">Cerrar sesión</a>
+            </nav>
+        </footer>
+    </body>
+</head>
+
+<body background="{{ url_for('static', filename='images/background.jpg') }}">
+    <font size="4" face="Playfair Display" color="Black">
+    <h1 align="center">DEVELOPMENT EXTRAS</h1>
+    <h2 align="center">Development Picture [1]</h2>
+    <img src="{{ url_for('static', filename='images/dev1.jpg') }}" class="center" width="20%" title="Development [1]">
+    <h3 align="center">Deo desarrollando su código en cualquier momento del día.</h3>
+    <br><br>
+    <h2 align="center">Development Picture [2]</h2>
+    <img src="{{ url_for('static', filename='images/dev2.png') }}" class="center" width="20%" title="Development [1]">
+        <h3 align="center">Diseñando las imágenes para la página.</h3>
+
+        <a href="{{ url_for('index_admin') }}"></a>
+
+    <br>
+
+    <h6 align="center">DeoDev™ 2025</h6>
+
+</body>
+
+</html>

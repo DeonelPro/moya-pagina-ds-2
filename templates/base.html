@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Tienda de Peluches Caseros</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles2.css') }}">
+    <link rel="shortcut icon" href="/static/images/favicon.ico">
+    integrity="sha256-o8O6S0tTdaF2KDWFmVrKKpFe38OFS8V8M6RsGtdCtPK=" crossorigin=""/>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="{{ url_for('user_page') }}">Inicio</a>
+            <a href="{{ url_for('market') }}">Mercado</a>
+            <a href="{{ url_for('localizacion') }}">Localización</a>
+            <a href="{{ url_for('carrito') }}">Carrito</a>
+            <a href="{{ url_for('chatbot') }}">Chatbot</a>
+            <a href="{{ url_for('logout') }}" class="logout-btn">Cerrar sesión</a>
+        </nav>
+    </header>
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+    <footer>
+        <p align="center">Deo's Plushie Market™ 2025</p>
+    </footer>
+</body>
+</html>

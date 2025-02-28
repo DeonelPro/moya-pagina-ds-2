@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deo Page 2</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+    <script type="text/javascript">
+        if (window.history.replaceState) {
+            window.history.replaceState(null, null, window.location.href);
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Bienvenido Jefe!</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="/admin_page/">Página de Administrador</a></li>
+            <li><a href="/edit/">Editar Usuario</a></li>
+            <li><a href="/delete/">Borrar Usuario</a></li>
+            <li><a href="/mostrar/">Mostrar Base de Datos</a></li>
+            <li><a href="{{ url_for('logout') }}" class="logout-btn">Cerrar sesión</a>
+        </ul>
+    </nav>
+</body>
+</html>
