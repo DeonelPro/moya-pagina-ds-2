@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Among Us Wiki by Aguilera D.</title>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='images/icon.png') }}">
+    <style>
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+    <script type="text/javascript">
+        if (window.history.replaceState) {
+            window.history.replaceState(null, null, window.location.href);
+        }
+    </script>
+</head>
+
+<body background="{{ url_for('static', filename='images/fondo.png') }}">
+    <font size="4" face="Playfair Display" color="White">
+
+    <img src="{{ url_for('static', filename='images/logo.png') }}" class="center" width="20%" title="Among Us Logo">
+    <h1 align="center">AMONG US GUÍA & WIKI</h1>
+    <img src="{{ url_for('static', filename='images/imagen1.jpg') }}" class="center" width="50%" title="Among Us Wallpaper">
+    <font size="4" face="Arial" color="White">
+
+    <br><br>
+    <img src="{{ url_for('static', filename='images/tabla.png') }}" align="right" width="30%">
+    <h2 align="center">¿QUÉ ES AMONG US?</h2>
+        Among Us es un videojuego de género party y multijugador en línea desarrollado por la compañía estadounidense Innersloth y distribuido entre junio y noviembre de 2018 para las plataformas Android, iOS y Windows. El 15 de diciembre de 2020 se anunció su disponibilidad en Nintendo Switch, mientras que su adaptación a las consolas Xbox One y Xbox Series X|S se confirmó para 14 de diciembre de 2021. Posteriormente se anunció su lanzamiento para PlayStation 4 y PlayStation 5 con skins exclusivos.
+    <br><br>
+        La trama del juego consiste en un grupo de tripulantes a bordo de una nave espacial que deben supervisar el adecuado funcionamiento del vehículo, al mismo tiempo que investigan a los «impostores» que intentan sabotear la nave y asesinarlos durante cada partida.
+    <br>
+    <h3>Categoria de Juego</h3>
+        Among Us es un videojuego multijugador para cuatro a quince jugadores ambientado en una nave espacial, donde la tripulacion debe realizar tareas mientras que se descubren a los impostores, la cantidad de ellos puede ser elegida por el administrador de la partida antes de empezarla, teniendo un maximo de 3 segun la cantidad de jugadores haya en el lobby (sala de espera antes del juego),  el objetivo de los impostores se basa en que, deben sabotear los sistemas de la nave para distraer y matar a los demás tripulantes sin ser descubiertos.
+    <br>
+    <h3>Mapas</h3>
+        Una partida puede tener lugar en uno de los cuatro mapas disponibles: The Skeld, centrado en el interior de una nave, Mira HQ, ambientado en una estación espacial, Polus, asentado en una base de investigación de un planeta, y The Airship, ubicado en un dirigible.
+    <br>
+    <h3>Lobby</h3>
+        En el lobby de cada juego, se pueden ajustar varias opciones para personalizar el juego, como el rango de visión de los tripulantes e impostores, y el número permitido de reuniones de emergencia. Existen tres alternativas para jugar, la partida "privada" que sirve para jugar con amigos y familiares, en dicha opción te asigna un código formado por seis letras mayúsculas que permitirá acceder a tus compañeros al juego; la opción en "público" que permite a cualquiera acceder a la partida y, por último, la opción "local" que sirve para jugar en línea con amigos en un mismo lugar. También hay variedades de opciones para personalizar a tu personaje; como el color, disfraces, sombreros y mascotas, aunque algunos elementos son contenido descargable mediante pago.
+    <br><br><br><br>
+    <h2 align="center">ROLES</h2>
+
+        <a href="{{ url_for('tripulante') }}">
+            
+            <img src="{{ url_for('static', filename='images/tripulante1.png') }}" class="center" width="30%">
+            
+        </a>
+        
+        <a href="{{ url_for('impostor') }}">
+            
+            <img src="{{ url_for('static', filename='images/impostor1.png') }}" class="center" width="30%">
+            
+        </a>
+
+        <a href="{{ url_for('logout') }}">
+				
+			<img src="{{ url_for('static', filename='images/volver1.png') }}" class="center" width=30%>
+				
+		</a>
+
+    <br>
+
+    <h6 align="center">DeoDev™ 2025</h6>
+
+</body>
+
+</html>

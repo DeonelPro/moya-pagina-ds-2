@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Among Us Wiki by Aguilera D.</title>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='images/icon.png') }}">
+    <style>
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+    <script type="text/javascript">
+        if (window.history.replaceState) {
+            window.history.replaceState(null, null, window.location.href);
+        }
+    </script>
+</head>
+
+<body background="{{ url_for('static', filename='images/fondo.png') }}">
+    <font size="4" face="Playfair Display" color="White">
+
+    <img src="{{ url_for('static', filename='images/logo.png') }}" class="center" width="20%" title="Among Us Logo">
+    <h1 align="center">LOS IMPOSTORES</h1>
+    <img src="{{ url_for('static', filename='images/imposter.png') }}" class="center" width="50%">
+    <font size="4" face="Arial" color="White">
+    
+    <br><br>
+    <img src="{{ url_for('static', filename='images/tablaI.png') }}" align="right" width="30%">
+    
+    <h2 align="center">IMPOSTORES</h2>
+        Los Impostores, también conocidos como los cambiaformas, son uno de los dos posibles roles asignados al azar en Among Us. El objetivo principal de los Impostores es matar los suficientes Tripulantes, para tener, una cantidad igual de integrantes en los dos bandos, todo antes de que se completen las tareas. Los Impostores no pueden completar ninguna tarea; Sin embargo, se les da una lista de tareas falsas como una guía general para fingir el comportamiento de un Tripulante y mezclarse con ellos. Los Impostores tienen la capacidad de Sabotear para forzar a los tripulantes a resolver problemas, matándolos a todos si no se resuelven a tiempo. Esta habilidad se puede utilizar de muchas maneras diferentes, como inculpando a los compañeros de tripulación que se alejaron de un cuerpo o que ocultan una muerte.
+        
+    <h3>FORMAS DE GANAR</h3>
+        Las formas de ganar de los impostores cambiando completamente comparando a los requisitos de los tripulantes, las formas son las siguientes:
+    <br>
+        <ul>
+            - Eliminando a los tripulantes hasta que haya un empate de integrantes en los dos equipos (de esa manera no podrán ser votados).
+            <br>
+            - Con la promulgación de un sabotaje crítico que no es resuelto a tiempo.
+        </ul>
+    
+    <h3>PROBABILIDAD</h3>
+        El rol de impostor es un rol que sale con aleatoriedad, es decir que a cualquier jugador puede tocarle ser el impostor, aunque solo se mostrará en su pantalla, ya que se debe mantener el rol que le tocó en el anonimato.
+    
+    <h3>HABILIDADES</h3>
+        En este apartado de la página se determinan las habilidades que tienen los impostores a la hora de jugar.
+    <br>
+    <font size="3" face="Arial" color="White">
+    
+    <h3>Usar (Utilizar)</h3><img src="{{ url_for('static', filename='images/usar.png') }}" width="6%">
+    <br><br>
+        El usar es representado como un botón, con el que se puede utilizar una gran variedad de objetos. La interacción más común que se hace usando la habilidad es activar y completar tareas. Los tripulantes también pueden utilizar el botón de emergencia para llamar a una reunión de forma inmediata cuando sea posible. Los Impostores también tienen "Utilizar" como habilidad, pero no pueden completar tareas con ella. Utilizar se encuentra en la esquina inferior derecha de la pantalla y puede ser reemplazada por Seguridad, Admin, Constantes o Registro de Puertas cuando el jugador este cerca del panel apropiado.
+    <br>
+    <h3>Reportar</h3><img src="{{ url_for('static', filename='images/reportar.png') }}" width="6%" title="Botón de Reporte">
+    <br><br>
+        Este botón puede ser utilizado por tripulantes como impostores, y sirve para reportar un cadáver encontrado por el mapa trayendo a toda la tripulación (incluyendo a los impostores) a una reunión de emergencia para discutir quién puede ser el o los impostores. Los impostores también tienen esta habilidad. El botón de reportar aparece encima del botón utilizar.
+    <br>
+    <h3>Matar</h3><img src="{{ url_for('static', filename='images/matar.png') }}" width="5%" title="Cadáver">
+    <br><br>
+        El impostor tiene la habilidad de acabar con un tripulante dándole al boton de Kill (Matar), de esta manera el tripulante pasará al lado fantasmal.
+    <br>
+    <h3>Sabotear</h3><img src="{{ url_for('static', filename='images/sabotaje.png') }}" width="5%" title="Cadáver">
+    <br><br>
+        El impostor tiene la habilidad de sabotear sistemas específicos de la nave o del mapa en el que se encuentre, además de también cerrar las puertas del mismo, esto causará que no se pueda presionar el botón para hacer una reunión de emergencia, pero si se puede hacerla mediante el reporte de un cuerpo. Los saboteos que pueden ocurrir son:
+    <br>
+        <ul>
+            - Reparar luces (reduce la visión de los tripulantes).
+            <br>
+            - Comunicaciones saboteadas (bloquea el mapa de los tripulantes, los paneles de administración y vitales, el sensor de movimiento y cámaras de seguridad).
+            <br>
+            - Fusión del Reactor / Reiniciar estabilizadores sismicos / Evitar ruta de colisión / Oxígeno agotado (son sabotajes que si no son arreglados en el tiempo correspondiente causarán el final de la partida a favor de los impostores).
+        </ul>
+        
+        
+    <font size="4" face="Arial" color="White">
+    
+    <h3>FANTASMA</h3>
+        El Fantasma es un rol que los tripulantes e impostores comparten cuando mueren o son expulsados, pero el fantasma impostor tiene la habilidad de seguir saboteando, aunque la habilidad de matar es eliminada.
+    <br><br>
+    <img src="{{ url_for('static', filename='images/fantasma.png') }}" width="5%" title="Fantasma">
+    <br><br>
+        Los fantasmas poseen un chat de texto privado para hablar en cualquier momento de la partida, los mensajes no serán visibles para los tripulantes vivos e impostores, a pesar de esto los mensajes de ellos si podrán ser vistos por los fantasmas. Se mueven flotando y atraviesan todo tipo de paredes, lo que no pueden es arreglar los sabotajes del mapa.
+    <br><br><br><br>
+    
+    <h2 align="center">VARIACIONES DE LOS IMPOSTORES</h2>
+    <h3 align="center">CAMBIAFORMAS</h3>
+    <img src="{{ url_for('static', filename='images/cambiaformas.jpg') }}" class="center" width="40%" title="Cambiaformas">
+    <br><br>
+        El Cambiaformas es un Rol en Among Us destinado al Impostor. Su objetivo principal sigue siendo el mismo, matar a la mayoría de los tripulantes para ganar. Junto con las habilidades estándar a las que los impostores tienen acceso, los cambiaformas tienen la habilidad adicional llamada mutación. El administrador de la sala decide cuántos cambiaformas habrá en la partida (hasta 3) y qué porcentaje de probabilidad (%) hay de que el rol sea asignado entre los impostores (0%-100%).
+    <br>
+    <font size="3" face="Arial" color="White">
+    
+    <h3>Habilidades (Mutación)</h3>
+        Aparte de las habilidades comunes de los impostores, este rol permite al jugador cambiar de forma mediante la mutación, de esa manera, adoptando la apariencia de otro tripulante o impostor. El Cambiaformas puede mantener su disfraz por el tiempo que el administrador de la sala haya dispuesto (hasta 30sg) después de lo cual aparecerá el huevo de transformación, estallará, y volverá a su apariencia normal. Luego de unos segundos podrá disfrazarse otra vez.
+    <br><br>
+    <img src="{{ url_for('static', filename='images/mutar.png') }}" width="7%" title="Habilidad de Mutación">
+    <img src="{{ url_for('static', filename='images/huevo.png') }}" width="7%" title="Huevo de Transformación">
+    <font size="3" face="Arial" color="White">
+    <br>
+    
+    <h2 align="center">OTRAS PÁGINAS</h2>
+    
+        <a href="{{ url_for('tripulante') }}">
+                
+            <img src="{{ url_for('static', filename='images/tripulante1.png') }}" class="center" width="30%">
+                
+        </a>
+        
+        <a href="{{ url_for('user_page') }}">
+				
+			<img src="{{ url_for('static', filename='images/inicio1.png') }}" class="center" width=30%>
+				
+		</a>
+
+        <a href="{{ url_for('logout') }}">
+				
+			<img src="{{ url_for('static', filename='images/volver1.png') }}" class="center" width=30%>
+				
+		</a>
+
+<br>
+
+<h6 align="center">DeoDev™ 2025</h6>
+
+</body>
+
+</html>

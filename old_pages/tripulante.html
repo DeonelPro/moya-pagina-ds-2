@@ -1,0 +1,225 @@
+<html>
+<head>
+	<title>Among Us Wiki by Aguilera D.</title>
+	<link rel="shortcut icon" href="{{ url_for('static', filename='images/icon.png') }}">
+	<style>
+		.center {
+		 display:block;
+		 margin-left: auto;
+		 margin-right: auto;
+		}
+	</style>
+    <script type="text/javascript">
+        if (window.history.replaceState) {
+            window.history.replaceState(null, null, window.location.href);
+        }
+    </script>
+</head>
+
+<body>
+
+	<body background="{{ url_for('static', filename='images/fondo.png') }}">
+	<font size="4" face="Playfair Display" color="White">
+
+	<img src="{{ url_for('static', filename='images/logo.png') }}" class="center" width="20%" title="Among Us Logo">
+	<h1 align="center">LA TRIPULACIÓN</h1>
+	<img src="{{ url_for('static', filename='images/crewmate.png') }}" class="center" width="50%">
+	<font size="4" face="Arial" color="White">
+	
+	<br><br>
+	<img src="{{ url_for('static', filename='images/tablaT.png') }}" align="right" width="30%">
+	<h2 align="center">LOS TRIPULANTES</h2>
+		Los Tripulantes, también conocidos como la Tripulación, son uno de los dos posibles roles asignados al azar en Among Us. El objetivo principal de un Tripulante es completar todas las tareas sin ser asesinado por un Impostor, con el objetivo secundario de encontrar a todos los Impostores y expulsarlos del mapa. Los Tripulantes que han sido asesinados por un Impostor, o expulsados, se convierten en fantasmas, por lo cual podrán seguir jugando.
+	<h3>FORMAS DE GANAR</h3>
+		A pesar de haberlo mencionado anteriormente, se deben recalcar las maneras que tienen los tripulantes para conseguir la victoria en la partida o sesión que se haga. Las formas son las siguientes:
+	<br>
+		<ul>
+			- Si todos los tripulantes (incluidos los fantasmas) completan todas sus tareas.
+			<br>
+			- Si todos los impostores son eliminados del juego, principalmente a través de la votación, pero también puede pasar por desconexión del juego, ya sea expulsandolo de la sala de juego o lobby, aunque esto ya es ambiente fuera del videojuego, es pertinente señalar que también contribuye a la meta de los tripulantes.
+		</ul>
+	<h3>TAREAS</h3>
+		La lista de tareas que deben seguir los tripulantes aparecen arriba a la izquierda de la pantalla, normalmente las tareas se clasifican en 3 categorías, largas, cortas y comunes, en la tabla se mostrarán todas las tareas y su respectiva clasificación.
+	<br><br>
+	
+	<table border="1" bordercolor="#FFFFFF">
+	
+		<tr>
+			<td style="background-color: blue"><font color="white">TAREA</td>
+			<td style="background-color: blue"><font color="white">CATEGORÍA</td>
+			<td style="background-color: blue"><font color="white">MAPA</td>
+		</tr>
+		<tr>
+			<td style="background-color: black"><font color="white">Abrir caja fuerte</td>
+			<td style="background-color: black"><font color="white">Larga</td>
+			<td style="background-color: black"><font color="white">Airship</td>
+		</tr>
+		<tr>
+			<td style="background-color: black"><font color="white">Abrir camino de agua</td>
+			<td style="background-color: black"><font color="white">Larga</td>
+			<td style="background-color: black"><font color="white">Polus</td>
+		</tr>
+		<tr>
+			<td style="background-color: black"><font color="white">Alinear la salida del motor</td>
+			<td style="background-color: black"><font color="white">Larga</td>
+			<td style="background-color: black"><font color="white">The Skeld</td>
+		</tr>
+		<tr>
+			<td style="background-color: black"><font color="white">Alinear telescopio</td>
+			<td style="background-color: black"><font color="white">Corta</td>
+			<td style="background-color: black"><font color="white">Polus</td>
+		</tr>
+		<tr>
+			<td style="background-color: black"><font color="white">Almacenar artefactos</td>
+			<td style="background-color: black"><font color="white">Corta</td>
+			<td style="background-color: black"><font color="white">Polus</td>
+		</tr>
+		<tr>
+			<td style="background-color: black"><font color="white">Armar artefacto</td>
+			<td style="background-color: black"><font color="white">Corta</td>
+			<td style="background-color: black"><font color="white">MiraHQ</td>
+		</tr>
+		<tr>
+			<td style="background-color: black"><font color="white">Arrancar reactor</td>
+			<td style="background-color: black"><font color="white">Larga</td>
+			<td style="background-color: black"><font color="white">The Skeld, MiraHQ, Polus</td>
+		</tr>
+		<tr>
+			<td style="background-color: black"><font color="white">Arreglar cableado / Reparar cables</td>
+			<td style="background-color: black"><font color="white">Común</td>
+			<td style="background-color: black"><font color="white">The Skeld, MiraHQ, Polus, The Airship</td>
+		</tr>
+		<tr>
+			<td style="background-color: black"><font color="white">Calibrar distribuidor</td>
+			<td style="background-color: black"><font color="white">Corta</td>
+			<td style="background-color: black"><font color="white">The Skeld, The Airship</td>
+		</tr>
+		<tr>
+			<td style="background-color: black"><font color="white">Comprar bebidas</td>
+			<td style="background-color: black"><font color="white">Corta</td>
+			<td style="background-color: black"><font color="white">MiraHQ</td>
+		</tr>
+		<tr>
+			<td style="background-color: black"><font color="white">Desbloquear colectores</td>
+			<td style="background-color: black"><font color="white">Corta</td>
+			<td style="background-color: black"><font color="white">The Skeld, MiraHQ, Polus</td>
+		</tr>
+		<tr>
+			<td style="background-color: black"><font color="white">Descargar/Cargar/Subir datos</td>
+			<td style="background-color: black"><font color="white">Larga (corta en Polus)</td>
+			<td style="background-color: black"><font color="white">The Skeld, Polus, The Airship</td>
+		</tr>
+		<tr>
+			<td style="background-color: black"><font color="white">Destruir Asteroides</td>
+			<td style="background-color: black"><font color="white">Larga (corta en Polus)</td>
+			<td style="background-color: black"><font color="white">The Skeld, MiraHQ, Polus</td>
+		</tr>
+		<tr>
+			<td style="background-color: black"><font color="white">Enviar Escaneo</td>
+			<td style="background-color: black"><font color="white">Larga (corta en Polus)</td>
+			<td style="background-color: black"><font color="white">The Skeld, MiraHQ, Polus</td>
+		</tr>
+		<tr>
+			<td style="background-color: black"><font color="white">Utilizar tarjeta</td>
+			<td style="background-color: black"><font color="white">Común</td>
+			<td style="background-color: black"><font color="white">The Skeld, MiraHQ, Polus</td>
+		</tr>
+	
+	</table>
+
+	<h3>HABILIDADES</h3>
+		En este apartado de la página se determinan las habilidades que tienen los tripulantes a la hora de jugar, ya sean en su beneficio o en su contra, esto cobrará sentido más adelante (revisar apartado "Muerte").
+	<br>
+	<font size=3 face="Arial" color="White">
+	
+	<h3>Usar (Utilizar)</h3><img src="{{ url_for('static', filename='images/usar.png') }}" width=6%>
+	<br><br>
+		El usar es representado como un botón, con el que se puede utilizar una gran variedad de objetos. La interacción más común que se hace usando la habilidad es activar y completar tareas. Los tripulantes también pueden utilizar el botón de emergencia para llamar a una reunión de forma inmediata cuando sea posible. Los Impostores también tienen "Utilizar" como habilidad, pero no pueden completar tareas con ella. Utilizar se encuentra en la esquina inferior derecha de la pantalla y puede ser reemplazada por Seguridad, Admin, Constantes o Registro de Puertas cuando el jugador este cerca del panel apropiado.
+	<br>
+	<h3>Reportar</h3><img src="{{ url_for('static', filename='images/reportar.png') }}" width=6% title="Botón de Reporte">
+	<br><br>
+		Este botón puede ser utilizado por tripulantes como impostores, y sirve para reportar un cadáver encontrado por el mapa trayendo a toda la tripulación (incluyendo a los impostores) a una reunión de emergencia para discutir quién puede ser el o los impostores. Los impostores también tienen esta habilidad. El botón de reportar aparece encima del botón utilizar.
+	<br>
+	<h3>Muerte</h3><img src="{{ url_for('static', filename='images/muerte.png') }}" width=5% title="Cadáver">
+	<br><br>
+		Cuando un Impostor mata a un Tripulante, su cuerpo cae al suelo, partido por la mitad con un hueso sobresaliendo, y el Tripulante se convierte en un fantasma, que aparece junto a su cuerpo.
+	<font size=4 face="Arial" color="White">
+	<h3>FANTASMA</h3>
+		El Fantasma es un rol que los tripulantes e impostores comparten cuando mueren o son expulsados, pero el fantasma tripulante, debe hacer sus tareas junto con el resto de la tripulación para llenar la barra de tareas. Una vez que todos terminen sus tareas, el juego terminará en victoria para ellos.
+	<br><br>
+	<img src="{{ url_for('static', filename='images/fantasma.png') }}" width=5% title="Fantasma">
+	<br><br>
+		Los fantasmas poseen un chat de texto privado para hablar en cualquier momento de la partida, los mensajes no serán visibles para los tripulantes vivos e impostores, a pesar de esto los mensajes de ellos si podrán ser vistos por los fantasmas. Se mueven flotando y atraviesan todo tipo de paredes, lo que no pueden es arreglar los sabotajes del mapa.
+	<br>
+	<h2 align="center">VARIACIONES DE LOS TRIPULANTES</h2>
+	<h3 align="center">INGENIERO</h3>
+	<img src="{{ url_for('static', filename='images/ingeniero.jpg') }}" class="center" width=40% title="Ingeniero">
+	<br><br>
+		El Ingeniero es un rol en Among Us destinado a la tripulación. Fue anunciado en el evento Summer Game Fest, y consiste en un tripulante con la habilidad de usar las ventilaciones, aunque tiene un cooldown a diferencia de los impostores. El administrador de la sala decide cuántos ingenieros habrá en la partida (hasta 14) y qué porcentaje de probabilidad (%) hay de que el rol sea asignado entre los tripulantes (0%-100%).
+	<br>
+	<font size=3 face="Arial" color="White">
+	
+	<h3>Habilidades (Ventilación)</h3>
+		Aparte de las habilidades comunes de los tripulantes, los ingenieros pueden usar las ventilaciones, pero solo 1 vez cada cierto tiempo.
+	<br>
+	<img src="{{ url_for('static', filename='images/ingenierovent.png') }}" width=10% title="Ventilación de Ingeniero">
+	<font size=4 face="Arial" color="White">
+	
+	<h3 align="center">CIENTÍFICO</h3>
+	<img src="{{ url_for('static', filename='images/cientifico.jpg') }}" class="center" width=40% title="Científico">
+	<br><br>
+		El Ingeniero es un rol en Among Us destinado a la tripulación. Fue anunciado en el evento Summer Game Fest, y consiste en un tripulante con la habilidad de usar las ventilaciones, aunque tiene un cooldown a diferencia de los impostores. El administrador de la sala decide cuántos ingenieros habrá en la partida (hasta 14) y qué porcentaje de probabilidad (%) hay de que el rol sea asignado entre los tripulantes (0%-100%).
+	<br>
+	<font size=3 face="Arial" color="White">
+	
+	<h3>Habilidades (Vitales)</h3>
+		Aparte de las habilidades comunes de los tripulantes, los científicos pueden revisar su panel de vitales, el cual dirá quien está vivo, muerto, o fue eliminado antes de la ronda, es decir, la última reunión de emergencia. A pesar de ser una buena habilidad, solo se pueden usar pocas veces por ronda, y para recargar sus usos se debe o hacer una reunión o completar tareas.
+	<br><br>
+	<img src="{{ url_for('static', filename='images/vitales.png') }}" width=10% title="Vitales de Científico">
+	<img src="{{ url_for('static', filename='images/panelvitales.jpg') }}" width=20% title="Panel de Vitales">
+	
+	<font size=4 face="Arial" color="White">
+	<br><br><br><br>
+	
+	<h2 align="center">VARIACIONES DE LOS FANTASMAS</h2>
+	<h3 align="center">ÁNGEL GUARDIÁN</h3>
+	<img src="{{ url_for('static', filename='images/angel.jpg') }}" class="center" width=40% title="Ángel Guardián">
+	<br><br>
+		El Ángel Guardián es un rol en Among Us destinado a la tripulación. Fue anunciado en el Summer Game Fest, y el rol no será entregado hasta que el juego ya haya empezado, corresponde al primer tripulante fallecido, pueden haber hasta 12 en una partida. Al ser un fantasma, éste puede moverse (flotando) libremente por todo el mapa, atravesando los objetos y las paredes con rapidez, además de que el sabotage de la Luz no afectará su visión. Al igual que un fantasma normal, el Ángel Guardián puede completar las tareas que quedaron pendiente de hacer en vida y también podrá hablar por el chat con sus compañeros fantasmas, sin embargo, no puede convocar Reuniones ni resolver los Sabotages.
+	<br>
+	<font size=3 face="Arial" color="White">
+	
+	<h3>Habilidades (Proteger)</h3>
+		Aparte de las habilidades comunes de los fantasmas, los angeles guardianes pueden proteger a los tripulantes o impostores de morir, la mecánica de proteger a los impostores existe debido que, si el fantasma no sabe que éste tripulante en realidad es el impostor, lo protegera sin saber gastando su habilidad, la cual posee su propio cooldown.
+	<br><br>
+	<img src="{{ url_for('static', filename='images/proteger.png') }}" width=7% title="Habilidad de Proteger">
+	<font size=4 face="Arial" color="White">
+	<br>
+	
+	<h2 align="center">OTRAS PÁGINAS</h2>
+	
+		<a href="{{ url_for('impostor') }}">
+				
+			<img src="{{ url_for('static', filename='images/impostor1.png') }}" class="center" width=30%>
+				
+		</a>
+		
+		<a href="{{ url_for('user_page') }}">
+				
+			<img src="{{ url_for('static', filename='images/inicio1.png') }}" class="center" width=30%>
+				
+		</a>
+
+		<a href="{{ url_for('logout') }}">
+				
+			<img src="{{ url_for('static', filename='images/volver1.png') }}" class="center" width=30%>
+				
+		</a>
+
+<br>
+
+<h6 align="center">DeoDev™ 2025</h6>
+
+</body>
+
+</html>
